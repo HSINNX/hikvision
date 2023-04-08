@@ -1,0 +1,3 @@
+# 配置海康威视 sdk 位置
+hik:
+  sdk-path: classpath:sdk/win

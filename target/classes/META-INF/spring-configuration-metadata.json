@@ -1,0 +1,64 @@
+{
+  "groups": [
+    {
+      "name": "hik",
+      "type": "cn.nkk.hikvision.properties.HiKProperties",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties"
+    },
+    {
+      "name": "hik.pool",
+      "type": "cn.nkk.hikvision.properties.HiKProperties$HikPool",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties",
+      "sourceMethod": "getPool()"
+    },
+    {
+      "name": "hik.stream",
+      "type": "cn.nkk.hikvision.properties.HiKProperties$PullStream",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties",
+      "sourceMethod": "getStream()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "hik.pool.core-pool-size",
+      "type": "java.lang.Integer",
+      "description": "核心线程数",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties$HikPool",
+      "defaultValue": 10
+    },
+    {
+      "name": "hik.pool.keep-alive-seconds",
+      "type": "java.lang.Integer",
+      "description": "空闲线程活跃时间（秒)",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties$HikPool",
+      "defaultValue": 60
+    },
+    {
+      "name": "hik.pool.max-pool-size",
+      "type": "java.lang.Integer",
+      "description": "最大线程数",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties$HikPool",
+      "defaultValue": 200
+    },
+    {
+      "name": "hik.pool.queue-capacity",
+      "type": "java.lang.Integer",
+      "description": "队列大小",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties$HikPool",
+      "defaultValue": 1024
+    },
+    {
+      "name": "hik.sdk-path",
+      "type": "java.lang.String",
+      "description": "海康sdk位置",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties"
+    },
+    {
+      "name": "hik.stream.m3u8-path",
+      "type": "java.lang.String",
+      "description": "m3u8磁盘路径",
+      "sourceType": "cn.nkk.hikvision.properties.HiKProperties$PullStream"
+    }
+  ],
+  "hints": []
+}
